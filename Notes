@@ -1,0 +1,46 @@
+Source https://www.javatpoint.com/jenkins
+
+//Continous Integration
+*In continuous integration after a code commit, the software is built and tested immediately. 
+*In a large project with many developers, commits are made many times during a day. 
+*With each commit code is built and tested. If the test is passed, build is tested for Deployment. 
+*If the Deployment is a success, the code is pushed to production. This commit, build, test, and deploy is a continuous process, and hence the name continuous integration/deployment.
+
+//Continous Delivery
+*Continuous delivery is a software engineering method in which a team develops software products in a short cycle. It ensures that software can be easily released at any time.
+ Here the application code is delivered after ensuring all the testcases r passed.
+
+//Continous Deployment 
+*Continous Delivery means making the software is ready to deploy at any time withall the automated cases passes. Here we can automatically deploy into production when the bulid got passes.
+
+//Jenkins
+*Jenkins is a powerful application that allows continuous integration and continuous delivery of projects
+*Jenkins is an open source automation tool written in Java programming language that allows continuous integration.
+*It is a free source that can handle any kind of build or continuous integration.
+
+Starting Jenkins run following command on command prompt
+D:\>Java –jar Jenkins.war
+
+can access Jenkins from the link − http://localhost:8080
+
+*Integrating tomcat app with jenkins
+
+*Jenkins achieves CI (Continuous Integration) with the help of plugins. 
+
+* If you want to integrate a particular tool, you have to install the plugins for that tool. For example: Maven 2 Project, Git, HTML Publisher, Amazon EC2, etc.
+
+*If any organization is developing a project, then Jenkins will continuously test your project builds and show you the errors in early stages of your development.
+
+*Possible steps executed by Jenkins are for example:
+1.Perform a software build using a build system like Gradle or Maven Apache
+2.Execute a shell script
+3.Archive a build result
+4.Running software tests
+
+//how Jenkins works.
+*First of all, a developer commits the code to the source code repository. Meanwhile, the Jenkins checks the repository at regular intervals for changes.
+*Soon after a commit occurs, the Jenkins server finds the changes that have occurred in the source code repository. Jenkins will draw those changes and will start preparing a new build.
+*If the build fails, then the concerned team will be notified.
+*If built is successful, then Jenkins server deploys the built in the test server.
+*After testing, Jenkins server generates a feedback and then notifies the developers about the build and test results.
+*It will continue to verify the source code repository for changes made in the source code and the whole process keeps on repeating.
